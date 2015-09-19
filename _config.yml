@@ -1,0 +1,12 @@
+# Site settings
+title: Stevens IEEE
+email: ieeeatstevens@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Stevens Student Branch of IEEE
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://stevensieee.github.io" # the base hostname & protocol for your site
+twitter_username: stevensieee
+github_username:  stevensieee
+
+# Build settings
+markdown: kramdown
