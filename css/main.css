@@ -373,4 +373,32 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 	display: flex;
 }
 
+.mission {
+	display: flex;
+}
+
+.mission-items {
+	flex: 1; /* additionally, equal width */
+	width: 25%;
+}
+
+.aboutdesc {
+	min-height: 100%;
+}
+
+i {
+	padding: 0 5px 0 0;
+}
+
+#events {
+	column-count: 2;
+}
+/*#events {*/
+/*	float: left ;*/
+/*	width: 50% ;*/
+/*}*/
+/*#calendar {*/
+/*	float: left ;*/
+/*	width: 50% ;*/
+/*}*/
 
