@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="icon" href="images/ieee.jpg">
     <title>Stevens IEEE</title>
@@ -19,7 +19,6 @@
     <a href="#aboutus">About Us</a>
     <a href="#eboard">E-Board</a>
     <a href="#events">Events</a>
-    <a href="#location">Location</a>
 </nav>
 
 <!-- Navbar -->
@@ -29,14 +28,13 @@
             <a class="w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i
                     class="fa fa-bars"></i></a>
         </li>
-        <li><a href="#" class="w3-teal home-button"><img src="images/ieee-logo-transparent.png"/></a></li>
+        <li><a href="#" class="w3-teal home-button"><img src="images/ieee-logo-transparent.png" alt="IEEE Logo"/></a></li>
         <li class="w3-hide-small w3-dropdown-hover">
             <a href="#" class="w3-hover-white" title="Notifications">Our Site <i class="fa fa-caret-down"></i></a>
             <div class="w3-dropdown-content w3-white w3-card-4">
                 <a href="#aboutus">About Us</a>
                 <a href="#eboard">E-Board</a>
                 <a href="#events">Events</a>
-                <a href="#location">Location</a>
             </div>
         </li>
         <li class="w3-hide-small"><a href="https://www.ieee.org" class="w3-hover-white">Global Site</a></li>
@@ -50,7 +48,6 @@
         <li><a href="#aboutus">About Us</a></li>
         <li><a href="#eboard">E-Board</a></li>
         <li><a href="#events">Events</a></li>
-        <li><a href="#location">Location</a></li>
     </ul>
 </div>
 
@@ -60,7 +57,7 @@
 </div>
 
 <!-- Row -->
-<a name="aboutus"></a>
+<span id="aboutus"></span>
 <div class="w3-row-padding w3-padding-64 w3-theme-l1">
     <div class="w3-quarter aboutdesc">
         <h2>Our Mission</h2>
@@ -129,13 +126,13 @@
 
 
 <!-- Container -->
-<a name="eboard"></a>
+<span id="eboard"></span>
 <div class="w3-container w3-padding-64 w3-center">
     <h2>OUR E-BOARD</h2>
     <p>Meet the people that make it all possible</p>
     <div class="w3-row e-board"><br>
         <div class="fifth">
-            <img src="images/placeholder.png" alt="Izy Engel" style="width:40%" class="w3-circle w3-hover-opacity">
+            <img src="images/IzyCroppedHeadshot.jpg" alt="Izy Engel" style="width:40%" class="w3-circle w3-hover-opacity">
             <h3>Izy Engel</h3>
             <p>President</p>
         </div>
@@ -164,12 +161,12 @@
 </div>
 
 <!-- Container -->
-<a name="events"></a>
+<span id="events"></span>
 <div class="w3-container w3-padding-64 w3-theme-l5">
     <div class="w3-row">
         <div class="w3-col m10 w3-large">
             <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Events</span></div>
-            <div class="w3-row" id="events">
+            <div class="w3-row" id="eventstab">
 <!--                <div class="w3-col">-->
                     <div>
                         <p>Join us every Monday at 9:15 in Babbio 320 for our meetings</p>
@@ -180,7 +177,7 @@
 <!--                <div class="w3-col">-->
                     <iframe id="calendar"
                             src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=c3RldmVucy5lZHVfNTI2YTRxM2NoMjJvdW80Y240Z2hvdmk0cjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D81B60"
-                            style="border-width:0" width="400rem" height="300rem" frameborder="0" scrolling="no"></iframe>
+                            style="border-width:0" width="500rem" height="300rem"></iframe>
 <!--                </div>-->
             </div>
             <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
@@ -248,7 +245,7 @@
     // Used to toggle the menu on smaller screens when clicking on the menu button
     function openNav() {
         var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
+        if (x.className.indexOf("w3-show") === -1) {
             x.className += " w3-show";
         } else {
             x.className = x.className.replace(" w3-show", "");
