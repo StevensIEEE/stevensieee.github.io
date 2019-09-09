@@ -13,7 +13,7 @@
 
 <!-- Side Navigation on click -->
 <nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none;z-index:2" id="mySidenav">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xxxlarge w3-text-teal">Close
+    <a onclick="w3_close()" class="w3-closenav w3-xxxlarge w3-text-teal">Close
         <i class="fa fa-remove"></i>
     </a>
     <a href="#aboutus">About Us</a>
@@ -59,20 +59,23 @@
 <!-- Row -->
 <span id="aboutus"></span>
 <div class="w3-row-padding w3-padding-64 w3-theme-l1">
-    <div class="w3-quarter aboutdesc">
-        <h2>Our Mission</h2>
-        <p>We are the Stevens Institute of Technology branch of the Institute of Electrical and Electronics Engineers.
-            We strive to enrich our members' education and professional identity by focusing on popular and growing
-            Electrical and Computer Engineering interests.</p>
-        <p>Our initiative is for you to participate in our club and take away new skills, knowledge,
-            and networks in order to feed and expand your intellectual curiosity. And while
-            doing so, we want you to connect with your greatest resource - your fellow peers. </p>
-        <p> Together we can learn, grow, and create - all while having fun.</p>
+    <div class="w3-quarter aboutdesc mission">
+        <div class="w3-quarter mission-items">
+            <h2>Our Mission</h2>
+            <p>We are the Stevens Institute of Technology branch of the Institute of Electrical and Electronics
+                Engineers.
+                We strive to enrich our members' education and professional identity by focusing on popular and growing
+                Electrical and Computer Engineering interests.</p>
+            <p>Our initiative is for you to participate in our club and take away new skills, knowledge,
+                and networks in order to feed and expand your intellectual curiosity. And while
+                doing so, we want you to connect with your greatest resource - your fellow peers. </p>
+            <p> Together we can learn, grow, and create - all while having fun.</p>
+        </div>
     </div>
-    <div class="w3-quarter mission">
+    <div class="w3-quarter mission-items">
         <div class="w3-card-2 w3-white mission-items">
             <img src="images/ddr-pad-hackathon.jpg" alt="Personal Growth" style="width:100%">
-            <div class="w3-container" style="height: 23em">
+            <div class="w3-container" style="height: 23em;">
                 <h3 style="margin-bottom: 3px;"><strong>Personal Growth</strong></h3>
                 <!--<h4>Helping students learn and grow in their profession</h4>-->
                 <p style="margin-top: 3px;">We aim to allow students to grow their knowledge and better themselves in
@@ -175,7 +178,7 @@
 <!--                <div class="w3-col">-->
                     <iframe id="calendar"
                             src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=c3RldmVucy5lZHVfNTI2YTRxM2NoMjJvdW80Y240Z2hvdmk0cjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D81B60"
-                            style="border-width:0" width="500rem" height="300rem"></iframe>
+                            style="border-width:0; max-width: 100%" width="500rem" height="300rem"></iframe>
 <!--                </div>-->
             </div>
             <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
@@ -195,14 +198,14 @@
             <p><i class="fa fa-check-circle w3-text-teal icon-start" aria-hidden="true"></i>Companies looking to collaborate or
                 present to Stevens Students</p>
         </div>
-        <div class="w3-col m7">
+<!--        <div class="w3-col m7">-->
             <!--	     This is where you put the Tockify code -->
             <!--	     -->
             <!--	   	<div data-tockify-component="calendar" data-tockify-calendar="nick.tomaro"></div>-->
             <!--<script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>-->
             <!--	  -->
             <!--	     End of Tockify code -->
-        </div>
+<!--        </div>-->
     </div>
 </div>
 

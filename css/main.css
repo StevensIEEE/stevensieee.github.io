@@ -379,7 +379,8 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 
 .mission-items {
 	flex: 1; /* additionally, equal width */
-	width: 25%;
+	width: 30em;
+    max-width: 100%;
 }
 
 .aboutdesc {
@@ -391,7 +392,11 @@ i.icon-start {
 }
 
 #eventstab {
-	column-count: 2;
+	/*column-count: 2;*/
+}
+
+p {
+    margin-top: 0;
 }
 /*#events {*/
 /*	float: left ;*/
