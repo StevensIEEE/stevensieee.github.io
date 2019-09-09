@@ -374,13 +374,16 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 }
 
 .mission {
-	display: flex;
+	display: table;
+	width: 100%;
 }
 
 .mission-items {
-	flex: 1; /* additionally, equal width */
-	width: 30em;
-    max-width: 100%;
+	display: table-cell;
+	/*width: 20em;*/
+	/*min-width: 23%;*/
+	/*!*min-height: 100%;*!*/
+    /*max-width: 100%;*/
 }
 
 .aboutdesc {
@@ -397,6 +400,9 @@ i.icon-start {
 
 p {
     margin-top: 0;
+}
+.epics {
+	width: 25%;
 }
 /*#events {*/
 /*	float: left ;*/
